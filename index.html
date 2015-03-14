@@ -1,0 +1,103 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html><head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>HOT Preset Files</title>
+
+    <script type="text/javascript" src="css/select2.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+
+    <link rel="stylesheet" type="text/css" href="css/select2.css">
+    <meta name="description" content="Help page for the HOT exports tool">
+    <meta name="author" content="Humanitarian OpenStreetMap Team">
+</head>
+<body>
+<div id="wrapper">
+
+    <div id="header" style="background-image: url(img/Red-header.jpg);">
+        <div class="logo">
+            <!--<img src="img/hot-sml-logo.png" class="logo">-->
+            <h1>HOT Preset Files Help</h1>
+        </div>
+        <div class="nav">
+                <a href="http://export.hotosm.org/en">Home</a>
+                <a href="http://export.hotosm.org/en/help">Help</a>
+                <a href="http://export.hotosm.org/en/jobs">Jobs</a>
+
+                <a href="http://export.hotosm.org/en/wizard_area">New Job</a>
+        </div>
+    </div>
+
+    <div id="content">
+
+        <h2>About</h2>
+        <p>
+            HOT Exports tool is an application that provides the user with the possibility to access up-to-date geospatial information from OpenStreetMap, create customized maps with specific tags and markers that can be visualized and used with other application programs, translate maps in different languages and export and download the maps in different formats for later use, like OSM format, SQLite, Google Earth.<br>
+        </p>
+        <p>
+            Preset Files (are the same as those used in JSOM) instruct HOT Exports to extract specific data attributes in your custom download. This is useful if the data you are accessing contains non-standard tags that are not typically included in data extracts, like hospitals, airports, waterfalls etc.
+        </p>
+        <p>
+            You can create and upload a new JOSM preset file, or use the one of the existing presets to enhance the content of your map with tags representing restaurants, hotels, railroads.
+        </p>
+
+
+        <h2>Get OSM Data from HOT Exports with Preset Files</h2>
+        <p>
+            HOT Exports provides a way to download a map of a specific area with specific data attributes that you define.
+            <ol>
+                <li>
+                    To use the existing preset files you have to go to <a href="http://export.hotosm.org">HOT Export Tool</a> page and create a new job, click on the <em class="guilabel">New Job</em> in the upper right corner. You will be asked to log in first.
+                </li>
+
+                <li>
+                    After you logged in, you are presented with the <em class="guilabel">New export job</em> page. Enter a name for the new job, such as the area you are going to download the map for. In this example we are going to download a map for part of the city of Ankara, Turkey. The available data for the export tool is limited to the area highlighted in the map presented on the <em class="guilabel">New Export Job</em> page.
+                    <img class="home" src="img/New_export_job.png" alt="New export job setting up." title="New export job setting up." height="400" width="600">
+                </li>
+
+                <li>
+                    Zoom on the map to the area you want to download. Click <em class="guilabel">Select Area</em> and draw a box around the area you want. The box can be manipulated by dragging its corners and centering the middle of it. When you are happy with the selected area click on <em class="guilabel">Create Job</em>.
+                </li>
+
+                <li>
+                    Next, you may configure your job, by selecting a presets file to include in your data extract. To add a preset file, click the drop-down menu next to <em class="guilabel">Select Preset File</em>, and choose one of the available options. By checking the box next to <em class="guilabel">Add Default Tags</em> we include the default attributes in the data extract, like infrastructure roads, hospitals and commercial centers. We are selecting <em class="guilabel">HOT HDM</em> from the drop-down menu to include basic data on our map.
+                    <img class="home" src="img/Job_config.png" alt="Configuring the attributes of the new export job." title="Configuring the attributes of the new export job." height="400" width="600">
+                </li>
+
+                <li>
+                    Click <em class="guilabel">Save</em> and the server will start processing your job. The duration of the job depends on the capacity of the server and on the area selected for the job.
+                </li>
+
+                <li>
+                    When the process is completed the data can be downloaded in a variety of formats, including shapefiles, KMZ (Google Earth) and database format.
+                    <img class="home" src="img/Job_completed.png" alt="Complete run of the export tool job." title="Complete run of the export tool job." height="400" width="600">
+                </li>
+
+                <li>
+                    Download the Google Earth format and open the file in the <a href="http://www.google.com/earth/download/ge/agree.html">Google Earth application</a>. To see the exported data in Google Earth, open the Google Earth application then from the File menu select Open then select the downloaded map in the kmz format from the previously run job.
+                    <img class="home" src="img/Google_Earth.png" alt="Google Earth visualization of the exported map." title="Google Earth visualization of the exported map." height="400" width="600">
+                </li>
+
+                <li>
+                    You may choose to run this job again, by clicking <em class="guilabel">Start new run</em>. If you wish to select another area but use the same configuration as for this job you may click on <em class="guilabel">New Job with Similar Configuration</em>.
+                </li>
+
+                <li>
+                   All the jobs you have created appear in the list on the <em class="guilabel">Jobs</em> page. If you want to download the same area with up to date data, find the job on the <em class="guilabel">Jobs</em> page and click <em class="guilabel">Start new run</em> to process the same extract but with the most recent OSM data.
+                </li>
+            </ol>
+        </p>
+
+
+        <h2>View existing preset files</h2>
+        <a href="http://export.hotosm.org/en/uploads/presets">View existing preset files</a>
+
+    </div>
+
+    <div id="footer">
+        <div class="tiny"><a href="http://hot.openstreetmap.org/" target="_blank"><img alt="HOT logo" src="img/hot-sml-logo.png" title="Humanitarian OpenStreetMap Team"></a>Copyright© 2013 Humanitarian OpenStreetMap Team  HOT Visual Tag Chooser</div>
+    </div>
+
+</div>
+
+
+</body></html>
