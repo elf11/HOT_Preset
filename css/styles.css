@@ -1,0 +1,387 @@
+body {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  margin-top: 0px;
+  background: url("/gradient.jpg") repeat-x scroll 0 0 #e5e6e8;
+}
+
+h1 {
+  margin-top: 0px;
+}
+h1 a {
+  text-decoration: none;
+}
+
+img.home{
+  display: block;
+  margin-top: 1em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+div#flash .info {color:green}
+div#flash .error {color:red}
+
+div.validation_errors {
+  margin: 1.5em;
+  font-style: italic;
+}
+
+
+#footer {
+background-color: #eee;
+min-width: 940px;
+padding: 30px 0;
+text-shadow: 0 1px 0 #fff;
+border-top: 1px solid #e5e5e5;
+-webkit-box-shadow: inset 0 5px 15px rgba(0, 0, 0, 0.025);
+-moz-box-shadow: inset 0 5px
+
+}
+
+.guilabel {
+    color: #fbad5a;
+}
+
+#footer .tiny {
+  margin-left:26px;
+  font-size:xx-small; color:gray
+}
+
+div#wrapper {
+  background: none repeat scroll 0 0 white;
+  border-left: 1px solid #999999;
+  border-right: 1px solid #999999;
+  margin: 0 auto;
+  width: 1000px;
+}
+#header{
+  padding: 0px 40px;
+  height: 75px;
+}
+#header h1 {
+  margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  text-shadow: #000 1px 1px 1px;
+  font-size: 26px;
+  color: #fff;
+}
+
+#header div.logo {
+width: 300px;
+float: left;
+padding: 10px 0px 40px 0px;
+}
+
+#header div.nav {
+  font-size: smaller;
+  float: right;
+  text-align: right;
+  padding-top: 20px;
+}
+#header div.nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#header div.nav a:hover {
+text-decoration: underline;
+}
+div#content{
+   padding: 1.5em;
+  
+}
+
+
+.vt_pagination {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: smaller;
+  margin-top: 1em;
+  padding: .3em; }
+.vt_pagination a, .vt_pagination span {
+  padding: .2em .5em; }
+.vt_pagination span.disabled {
+  color: #AAA; }
+.vt_pagination span.current {
+  font-weight: bold;
+  color: #00CC00; }
+.vt_pagination a {
+  border: 1px solid #DDDDDD;
+  color: #002200;
+  text-decoration: none; }
+.vt_pagination a:hover, .vt_pagination a:focus {
+  border-color: #003366;
+  background: #e3e3d4;
+  color: #00CC00; }
+.vt_pagination .page_info {
+  color: #aaa;
+  padding-top: .8em; }
+.vt_pagination .prev_page, .vt_pagination .next_page {
+  border-width: 2px; }
+.vt_pagination .prev_page {
+  margin-right: 1em; }
+.vt_pagination .next_page {
+  margin-left: 1em; }
+
+.vt_pagination .per_page_select {
+  text-transform: none;
+  font-weight: normal;
+  font-size: smaller;
+}
+
+.delete_form {
+  display: inline;
+}
+
+form#collection_form {
+  width: 600px
+}
+form#collection_form p{
+  margin:1px
+}
+
+form#collection_form label{
+  float: left;
+  width: 195px;
+}
+form#collection_form input{
+  width: 350px;
+}
+
+span.clone_link {
+  font-size: smaller;
+}
+span.exportsupload_link {
+ font-size: smaller;
+ }
+form#export_upload {
+width: 650px
+}
+
+form#export_upload label{
+float:left;
+width:300px
+}
+form#export_upload input{
+width: 250px;
+}
+
+ 
+/*trees*/
+
+ul.jqtree_common {
+  padding-top: 1em;
+  padding-bottom: 2em;
+}
+
+div#tree_container {
+  position: relative
+}
+div#item_tree {
+  width: 355px;
+}
+
+div#item_tree span.itemtoolbar{
+  float:right;
+  height: 40px;
+}
+
+div#tag_tree span.tagtoolbar{
+  float:right;
+  height: 22px;
+  width: 47px;
+}
+
+div#tag_tree_container {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  font-size: smaller;
+  padding-right: 0.5em;
+  background-color: rgb(253, 206, 119);
+  border-style: solid;
+  border-width: 1px;
+  max-width: 580px;
+}
+
+div#tag_tree_title{
+text-align: center;
+font-weight: bold;
+}
+
+div#tag_tree {
+  width: auto;
+  margin-left: 7px;
+}
+div#tag_tree span.jqtree-title {
+  font-style: italic;
+  float: left;
+  display: block;
+  width: 70px;
+  font-size: smaller;
+}
+
+div#tag_tree input {width:100px}
+div#tag_tree div.jqtree_common{
+  padding-bottom: 0.1em;
+  min-height: 23px
+}
+div#tag_tree div.jqtree_common span.left{
+  float: left;
+  width: 200px;
+}
+div#tag_tree div.jqtree_common span.left input{
+  width: 20px;
+}
+
+div#tag_tree div.jqtree_common span.right{
+  margin-right: 1em;
+}
+
+div#tag_tree div.jqtree_common span.link{
+  font-size: smaller;
+}
+
+/*dialogs*/
+
+span.tips {
+  display:block;
+  font-style: italic;
+  font-weight: lighter;
+}
+
+input.ui-button {
+  font-size:smaller;
+}
+
+div.ui-dialog{
+  font-size: smaller;
+  z-index: 500;
+}
+
+form.dialog_form label{
+  float: left;
+  width: 160px;
+}
+form.dialog_form input{
+/*  width: 300px;*/
+}
+
+.select2-choice{
+  height: 39px !important;
+}
+div.select2-drop {
+  font-size:x-small;
+}
+
+form#add_preset_element_form label{
+  float:left;
+  width: 160px;
+}
+form.eleform label{
+  float: left;
+  width: 160px;
+}
+form.eleform button{
+  float: left;
+  width: 160px;
+}
+
+div.ui-dialog button.delete_button {
+  margin-right: 150px;
+}
+div.ui-dialog button.delete_button:disabled {
+  background: lightgray;
+  color: gray;
+  border-color: gray;
+}
+
+div.ui-dialog button.delete_tag_button {
+  margin-right: 150px;
+}
+div.ui-dialog button.delete_tag_button:disabled {
+  background: lightgray;
+  color: gray;
+  border-color: gray;
+}
+
+div#add_edit_dialog{
+  padding-left: 0.3em;
+  padding-bottom: 0em;
+  padding-right: 0.3em;
+}
+
+div#add_edit_dialog div#add_tag_header{ 
+  text-align: center;
+  font-weight: bold;
+  padding:4px
+}
+
+div#add_edit_dialog div#tag_section {
+  background-color: rgb(253, 206, 119);
+  padding: 5px;
+}
+
+div#add_edit_dialog div#item_section{
+  padding: 2px;
+  margin-bottom: 5px;
+  background-color: #BEE0F5;
+}
+
+.settings-button {
+  float: left;
+  width: 21px;
+  height: 21px;
+  border-radius: 5px;
+  border: 1px solid #161615;
+  box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, .26), 0px 1px 0px 0px rgba(255, 255, 255, .15);
+  opacity: 0.7;
+  background-color: #fece2f;
+  z-index: 2;
+  display: block;
+  margin: 9px 2px;
+}
+
+.add-button {
+  margin: 0px 6px;
+  background-color: transparent ;
+}
+
+.add_tag_head {
+  float: left;
+  margin-left: 10px;
+  margin-bottom: 5px;
+}
+
+
+.settings-button:hover, .pressed {
+  background-color: transparent;
+  opacity: 1;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.settings-button img {
+  margin: 2px auto 0px auto;
+  display: block;
+  z-index: -1;
+}
+
+
+.settings-button.tag{
+  width: 15px;
+  height:15px;
+  margin: 6px 3px;
+}
+
+.settings-button.tag img{
+  width: 13px;
+  height:13px;
+  margin-left: 1px;
+  margin-top: 1px;
+  margin-bottom: 0px;
+}
+
+.center-class {
+    text-align: justify;
+}
