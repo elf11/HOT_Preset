@@ -381,3 +381,7 @@ div#add_edit_dialog div#item_section{
   margin-top: 1px;
   margin-bottom: 0px;
 }
+
+.center-class {
+    text-align: justify;
+}
