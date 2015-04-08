@@ -13,7 +13,7 @@
 <body>
 
 <style>
-    div.floating-menu {position:fixed;background:#fff4c8;border:1px solid #ffcc00;width:150px;z-index:100;}
+    div.floating-menu {position:fixed;background:none;border:none solid #ffcc00;width:200px;z-index:100;}
     div.floating-menu a, div.floating-menu h3 {display:block;margin:0 0.5em;}
 </style>
 <div class="floating-menu">
@@ -25,7 +25,7 @@
         </ul>
     <a href="#edata">Exporting Data</a>
     <!--<ul style="list-style-type: none">-->
-        <li><a href="#nexp">New Export Job</a></li>
+        <a href="#nexp">New Export Job</a>
             <ul style="list-style-type: none">
                 <li>
                     <a href="#cfg">Configuration</a>
@@ -37,7 +37,7 @@
                     <a href="#dformat">Data formats</a>
                 </li>
             </ul>
-        <li><a href="#nrun">Start New Run</a></li>
+        <a href="#nrun">Start New Run</a>
     <!--</ul>-->
 </div>
 
@@ -107,6 +107,8 @@
                     To use the existing preset files you have to go to <a href="http://export.hotosm.org">HOT Export Tool</a>
                     page and create a new job, click on the <em class="guilabel">New Job</em> in the upper right corner. You will be asked to
                     log in first.
+					<img class="home" src="img/new_job_closeup.png" alt="New job option on home page." title="New job option on home page.">
+                    <p align="center">The New job option</p>
                 </li>
 
                 <li class="center-class">
@@ -151,8 +153,12 @@
                             This includes basic infrastructure like roads, hospitals and commercial centers.
                         </li>
                         <li>
-                            You can also choose to translate the map into a different language to convert the OpenStreetMap file in a different
-                            mapping schema (using Tag Transform SQL file).
+                            You can also choose to translate the map into a different language by selecting the Translation File. This will translate the 
+							names of the tags using one of the translation files.
+						</li>
+						<li>
+							You can convert the OpenStreetMap file to a different mapping schema (using Tag Transform SQL file). This means that your OSM map 
+							will be converted to other GIS formats (GIS file format is a standard of encoding geographical information into a file).
                         </li>
                     </ol>
                     <img class="home" src="img/selected_job_ex.png" alt="Configuring the attributes of the new export job." title="Configuring the attributes of the new export job.">
@@ -199,7 +205,10 @@
                 <li class="center-class">
                    All the jobs you have created appear in the list on the <em class="guilabel">Jobs</em> page (click on the button named <i>Jobs</i> in the right upper corner of the page).
                     If you want to download the same area with up to date data, find the job on the <em class="guilabel">Jobs</em> page and click
-                    <em class="guilabel">Start new run</em> to process the same extract but with the most recent OSM data.
+                    <em class="guilabel">Start new run</em> to process the same extract but with the most recent OSM data. You can also choose to delete one of the existing 
+					jobs by clicking on the delete button next to it.
+					<img class="home" src="img/all_jobs.png" alt="All jobs page." title="All jobs page.">
+                    <p align="center">All jobs page</p>
                 </li>
             </ol>
         </p>
